@@ -1,7 +1,8 @@
 package main
 
-import "fmt"
+import "migomeal/rest"
 
 func main(){
-	fmt.Println("Hallo")
+	adapter := rest.NewAdapter()
+	adapter.ListenAndServe()
 }
